@@ -77,12 +77,12 @@ header nav{
 	transform: translate(-50%, -150%);
 }
 .nosotros-marker{
-	display: flex;
+	box-sizing: border-box;
 }
 .nosotros-marker i{
 	margin-left: 4px;
-	margin-top: 2px;
-	align-self: center;
+	box-sizing: border-box;
+	transform: translateY(1px);
 }
 /*SECTIONS*/
 #inicio, #nosotros div, #servicios, #contactanos, footer{
