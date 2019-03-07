@@ -8,7 +8,7 @@
 		var currentScrollPos = documentEl.scrollTop();
 		section.each(function(){
 			var self = $(this);
-			if ( self.offset().top < (currentScrollPos + navH) && (currentScrollPos + navH) < (self.offset().top + self.outerHeight()) ) {
+			if ( self.offset().top <= (currentScrollPos + navH) && (currentScrollPos + navH) < (self.offset().top + self.outerHeight()) ) {
 				var targetCLass = '.' + self.attr('id') + '-marker';
 				navLinks.removeClass('active');
 				$(targetCLass).addClass('active');
