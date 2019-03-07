@@ -14,15 +14,11 @@
 				$(targetCLass).addClass('active');
 			}
 		});
+		// Cambio de color
+		if (currentScrollPos > navH) {
+			$('nav').addClass("bg-blue");
+		} else {
+			$('nav').removeClass("bg-blue");
+		}
 	});
 })();
-
-/*Cambiar color*/
-var nav = document.getElementById('nav');
-window.onscroll = () => {
-	if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-		nav.classList.add('bg-blue');
-	}else{
-		nav.classList.remove('bg-blue');
-	}
-}
